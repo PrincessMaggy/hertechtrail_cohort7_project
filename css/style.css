@@ -1,26 +1,24 @@
 /********** Template CSS **********/
 :root {
-    --primary: #4294E3;
-    --secondary: #8F12FD;
-    --light: #F0F6FF;
-    --dark: #262B47;
+    --primary: #4294e3;
+    --secondary: rgb(66, 6, 6);
+    --light: #f0f6ff;
+    --dark: #262b47;
 }
-
 
 /*** Spinner ***/
 #spinner {
     opacity: 0;
     visibility: hidden;
-    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
     z-index: 99999;
 }
 
 #spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    transition: opacity 0.5s ease-out, visibility 0s linear 0s;
     visibility: visible;
     opacity: 1;
 }
-
 
 /*** Heading ***/
 h1,
@@ -41,32 +39,46 @@ h6,
     font-weight: 500 !important;
 }
 
-
 /*** Gradient Text & BG ***/
 .text-primary-gradient {
-    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background: linear-gradient(
+        to bottom right,
+        var(--primary),
+        var(--secondary)
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .text-secondary-gradient {
-    background: linear-gradient(to bottom right, var(--secondary), var(--primary));
+    background: linear-gradient(
+        to bottom right,
+        var(--secondary),
+        var(--primary)
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .bg-primary-gradient {
-    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background: linear-gradient(
+        to bottom right,
+        var(--primary),
+        var(--secondary)
+    );
 }
 
 .bg-secondary-gradient {
-    background: linear-gradient(to bottom right, var(--secondary), var(--primary));
+    background: linear-gradient(
+        to bottom right,
+        var(--secondary),
+        var(--primary)
+    );
 }
-
 
 /*** Button ***/
 .btn {
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .btn.btn-primary-gradient,
@@ -74,31 +86,39 @@ h6,
     position: relative;
     overflow: hidden;
     border: none;
-    color: #FFFFFF;
+    color: #ffffff;
     z-index: 1;
 }
 
 .btn.btn-primary-gradient::after,
 .btn.btn-secondary-gradient::after {
     position: absolute;
-    content: "";
+    content: '';
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    transition: .5s;
+    transition: 0.5s;
     z-index: -1;
     opacity: 0;
 }
 
 .btn.btn-primary-gradient,
 .btn.btn-secondary-gradient::after {
-    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background: linear-gradient(
+        to bottom right,
+        var(--primary),
+        var(--secondary)
+    );
 }
 
 .btn.btn-secondary-gradient,
 .btn.btn-primary-gradient::after {
-    background: linear-gradient(to bottom right, var(--secondary), var(--primary));
+    background: linear-gradient(
+        to bottom right,
+        var(--secondary),
+        var(--primary)
+    );
 }
 
 .btn.btn-primary-gradient:hover::after,
@@ -139,9 +159,12 @@ h6,
     bottom: 45px;
     z-index: 99;
     border: none;
-    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background: linear-gradient(
+        to bottom right,
+        var(--primary),
+        var(--secondary)
+    );
 }
-
 
 /*** Navbar ***/
 .navbar-light .navbar-nav .nav-link {
@@ -153,12 +176,12 @@ h6,
     font-weight: 500;
     color: var(--light) !important;
     outline: none;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .navbar-light .navbar-nav .nav-link::before {
     position: absolute;
-    content: "";
+    content: '';
     width: 0;
     height: 0;
     top: -10px;
@@ -166,7 +189,7 @@ h6,
     transform: translateX(-50%);
     border: 10px solid;
     border-color: var(--light) transparent transparent transparent;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
@@ -180,12 +203,12 @@ h6,
 }
 
 .navbar-light .navbar-brand h1 {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .navbar-light .navbar-brand img {
     max-height: 60px;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .sticky-top.navbar-light .navbar-brand img {
@@ -195,12 +218,12 @@ h6,
 @media (max-width: 991.98px) {
     .sticky-top.navbar-light {
         position: relative;
-        background: #FFFFFF;
+        background: #ffffff;
     }
 
     .navbar-light .navbar-collapse {
         margin-top: 15px;
-        border-top: 1px solid #DDDDDD;
+        border-top: 1px solid #dddddd;
     }
 
     .navbar-light .navbar-nav .nav-link,
@@ -220,7 +243,11 @@ h6,
     }
 
     .navbar-light .navbar-brand h1 {
-        background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+        background: linear-gradient(
+            to bottom right,
+            var(--primary),
+            var(--secondary)
+        );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -238,10 +265,10 @@ h6,
         left: 0;
         z-index: 999;
     }
-    
+
     .sticky-top.navbar-light {
         position: fixed;
-        background: #FFFFFF;
+        background: #ffffff;
     }
 
     .sticky-top.navbar-light .navbar-nav .nav-link::before {
@@ -249,26 +276,24 @@ h6,
     }
 
     .sticky-top.navbar-light .navbar-brand h1 {
-        background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+        background: linear-gradient(
+            to bottom right,
+            var(--primary),
+            var(--secondary)
+        );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 }
 
-
 /*** Hero Header ***/
 .hero-header {
     margin-bottom: 6rem;
     padding: 16rem 0 0 0;
-    background:
-        url(../img/bg-circle.png),
-        url(../img/bg-triangle.png),
+    background: url(../img/bg-circle.png), url(../img/bg-triangle.png),
         url(../img/bg-bottom.png),
         linear-gradient(to bottom right, var(--primary), var(--secondary));
-    background-position:
-        left 0px top 0px,
-        right 0px top 50%,
-        center bottom;
+    background-position: left 0px top 0px, right 0px top 50%, center bottom;
     background-repeat: no-repeat;
 }
 
@@ -278,17 +303,15 @@ h6,
     }
 }
 
-
 /*** Feature ***/
 .feature-item {
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .feature-item:hover {
     margin-top: -15px;
-    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .08);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
 }
-
 
 /*** Pricing ***/
 .pricing .nav {
@@ -299,7 +322,7 @@ h6,
     padding: 12px 30px;
     font-weight: 500;
     color: var(--dark);
-    background: #FFFFFF;
+    background: #ffffff;
 }
 
 .pricing .nav-item:first-child .nav-link {
@@ -311,10 +334,13 @@ h6,
 }
 
 .pricing .nav-link.active {
-    color: #FFFFFF;
-    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    color: #ffffff;
+    background: linear-gradient(
+        to bottom right,
+        var(--primary),
+        var(--secondary)
+    );
 }
-
 
 /*** Screenshot ***/
 .screenshot-carousel {
@@ -327,7 +353,7 @@ h6,
 
 .screenshot-carousel::before {
     position: absolute;
-    content: "";
+    content: '';
     width: 100%;
     height: 100%;
     top: 0;
@@ -360,19 +386,23 @@ h6,
     margin: 5px 0;
     width: 15px;
     height: 15px;
-    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background: linear-gradient(
+        to bottom right,
+        var(--primary),
+        var(--secondary)
+    );
     border-radius: 15px;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .screenshot-carousel .owl-dot::after {
     position: absolute;
-    content: "";
+    content: '';
     width: 5px;
     height: 5px;
     top: 5px;
     left: 5px;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 5px;
 }
 
@@ -380,20 +410,23 @@ h6,
     box-shadow: 0 0 10px var(--dark);
 }
 
-
 /*** Testimonial ***/
 .testimonial-carousel .owl-item .testimonial-item,
 .testimonial-carousel .owl-item .testimonial-item * {
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item {
-    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background: linear-gradient(
+        to bottom right,
+        var(--primary),
+        var(--secondary)
+    );
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item h5,
 .testimonial-carousel .owl-item.center .testimonial-item p {
-    color: #FFFFFF !important;
+    color: #ffffff !important;
 }
 
 .testimonial-carousel .owl-nav {
@@ -410,32 +443,34 @@ h6,
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF;
-    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    color: #ffffff;
+    background: linear-gradient(
+        to bottom right,
+        var(--primary),
+        var(--secondary)
+    );
     border-radius: 60px;
     font-size: 18px;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
-    background: linear-gradient(to bottom right, var(--secondary), var(--primary));
+    background: linear-gradient(
+        to bottom right,
+        var(--secondary),
+        var(--primary)
+    );
 }
-
 
 /*** Footer ***/
 .footer {
     margin-top: 6rem;
     padding-top: 9rem;
-    background:
-        url(../img/bg-circle.png),
-        url(../img/bg-triangle.png),
+    background: url(../img/bg-circle.png), url(../img/bg-triangle.png),
         url(../img/bg-top.png),
         linear-gradient(to bottom right, var(--primary), var(--secondary));
-    background-position:
-        left 0px bottom 0px,
-        right 0px top 50%,
-        center top;
+    background-position: left 0px bottom 0px, right 0px top 50%, center top;
     background-repeat: no-repeat;
 }
 
@@ -447,9 +482,9 @@ h6,
     align-items: center;
     justify-content: center;
     color: var(--light);
-    border: 1px solid rgba(256, 256, 256, .1);
+    border: 1px solid rgba(256, 256, 256, 0.1);
     border-radius: 40px;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .footer .btn.btn-social:hover {
@@ -463,13 +498,13 @@ h6,
     text-align: left;
     color: var(--light);
     font-weight: normal;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .footer .btn.btn-link::before {
     position: relative;
-    content: "\f105";
-    font-family: "Font Awesome 5 Free";
+    content: '\f105';
+    font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     margin-right: 10px;
 }
@@ -482,7 +517,7 @@ h6,
 .footer .copyright {
     padding: 25px 0;
     font-size: 14px;
-    border-top: 1px solid rgba(256, 256, 256, .1);
+    border-top: 1px solid rgba(256, 256, 256, 0.1);
 }
 
 .footer .copyright a {
@@ -492,7 +527,7 @@ h6,
 .footer .footer-menu a {
     margin-right: 15px;
     padding-right: 15px;
-    border-right: 1px solid rgba(255, 255, 255, .1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer .footer-menu a:last-child {
