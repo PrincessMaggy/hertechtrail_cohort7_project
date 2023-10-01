@@ -10,30 +10,31 @@
         <!-- Favicon -->
         <link href="img/favicon.ico" rel="icon" />
 
+          <!-- Boxicons cdn -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- AOS Animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- Link Swiper's CSS cdn -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
         <!-- Google Web Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Manrope:wght@800&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;300;400;500;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100&display=swap" rel="stylesheet">
 
         <!-- Icon Font Stylesheet -->
-        <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-            rel="stylesheet"
-        />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-            rel="stylesheet"
-        />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"  rel="stylesheet"/>
+
+        <!-- Bootstrap cdn -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
         <!-- Libraries Stylesheet -->
         <link href="lib/animate/animate.min.css" rel="stylesheet" />
-        <link
-            href="lib/owlcarousel/assets/owl.carousel.min.css"
-            rel="stylesheet"
-        />
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"/>
 
         <!-- Customized Bootstrap Stylesheet -->
         <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -45,15 +46,8 @@
     <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
         <div class="container-xxl bg-white p-0">
             <!-- Spinner Start -->
-            <div
-                id="spinner"
-                class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-            >
-                <div
-                    class="spinner-grow text-primary"
-                    style="width: 3rem; height: 3rem"
-                    role="status"
-                >
+            <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+                <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem" role="status">
                     <span class="sr-only">Loading...</span>
                 </div>
             </div>
@@ -61,262 +55,197 @@
 
             <!-- Navbar & Hero Start -->
             <div class="container-xxl position-relative p-0" id="home">
-                <nav
-                    class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
-                >
-                    <a href="" class="navbar-brand p-0">
-                        <h1 class="m-0">FitApp</h1>
-                        <!-- <img src="img/logo.png" alt="Logo"> -->
-                    </a>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse"
-                    >
-                        <span class="fa fa-bars"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <div class="navbar-nav mx-auto py-0">
-                            <a href="#" class="nav-item nav-link active"
-                                >Home</a
-                            >
-                            <a href="./about.html" class="nav-item nav-link"
-                                >About</a
-                            >
-
-                            <a href="./portfolio.html" class="nav-item nav-link"
-                                >Portfolio</a
-                            >
+                <!-- nav page -->
+                <nav class=" navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 raleway">
+                    <div class="container-md px-5">
+                        <a href="" class="navbar-brand p-0"><h1 class="m-0">Cesca</h1></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="fa fa-bars"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <div class="navbar-nav mx-auto py-0 gap-5">
+                                <a href="#" class="nav-item nav-link active">Home</a>
+                                <a href="./about.html" class="nav-item nav-link ">About</a>
+                                <a href="./portfolio.html" class="nav-item nav-link">Portfolio</a>
+                                
+                            </div>
+                            
+                            <form class="pe-5" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            </form>
+                            <a href="./contact.html" class="btn btn-primary-gradient rounded-pill py-2 px- ms-3 d-none d-lg-block">Contact</a>
                         </div>
-                        <a
-                            href="./contact.html"
-                            class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block"
-                            >Contact</a
-                        >
                     </div>
                 </nav>
-
+                <!-- End of nav -->
+                <!-- hero page -->
                 <div class="container-xxl bg-primary hero-header">
                     <div class="container px-lg-5">
                         <div class="row g-5">
-                            <div class="col-lg-8 text-center text-lg-start">
-                                <h1
-                                    class="text-white mb-4 animated slideInDown"
-                                >
-                                    Welcome to my page!!!
-                                </h1>
-                                <p class="text-white pb-3 animated slideInDown">
-                                    I'm a software developer.
-                                </p>
-                                <a
-                                    href="about.html"
-                                    class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft"
-                                    >About me</a
-                                >
-                                <a
-                                    href="contact.html"
-                                    class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight"
-                                    >Contact me</a
-                                >
+                            <div class="col-lg-8 text-center text-lg-start ">
+                                <h1 class="text-center text-white mb-4 animated slideInDown poppins display-5 fw-bolder">Welcome to Cesca's page!</h1>
+                                <p class=" text-center text-white py-3 animated slideInDown raleway fs-4">We are software developers and designers.</p>
+                                <div class="text-center">
+                                    <a href="about.html"class=" btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft">About us</a>
+                                    <a href="contact.html" class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">Contact us</a> 
+                                </div>  
                             </div>
-                            <div
-                                class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp"
-                                data-wow-delay="0.3s"
-                            >
+                            <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
                                 <div class="owl-carousel screenshot-carousel">
-                                    <img
-                                        class="img-fluid"
-                                        src="img/screenshot-1.png"
-                                        alt=""
-                                    />
-                                    <img
-                                        class="img-fluid"
-                                        src="img/screenshot-2.png"
-                                        alt=""
-                                    />
-                                    <img
-                                        class="img-fluid"
-                                        src="img/screenshot-3.png"
-                                        alt=""
-                                    />
-                                    <img
-                                        class="img-fluid"
-                                        src="img/screenshot-4.png"
-                                        alt=""
-                                    />
-                                    <img
-                                        class="img-fluid"
-                                        src="img/screenshot-5.png"
-                                        alt=""
-                                    />
+                                    <img class="img-fluid" src="./img/pic-1.png" alt=""/>
+                                    <img class="img-fluid" src="./img/pic-2.png" alt=""/>
+                                    <img class="img-fluid" src="./img/pic-3.png" alt=""/>
+                                    <img class="img-fluid" src="./img/pic-4.png" alt=""/>
+                                    <img class="img-fluid" src="./img/pic-5.png" alt=""/>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- end of hero page -->
             </div>
             <!-- Navbar & Hero End -->
 
-            <!-- Screenshot Start -->
+            <!-- goals & Visions -->
             <div class="container-xxl py-5">
                 <div class="container py-5 px-lg-5">
                     <div class="row g-5 align-items-center">
-                        <div
-                            class="col-lg-8 wow fadeInUp"
-                            data-wow-delay="0.1s"
-                        >
-                            <h5 class="text-primary-gradient fw-medium">
-                                Screenshot
-                            </h5>
-                            <h1 class="mb-4">
-                                User Friendly interface And Very Easy To Use
-                                Fitness App
-                            </h1>
-                            <p class="mb-4">
-                                Diam dolor diam ipsum et tempor sit. Aliqu diam
-                                amet diam et eos labore. Clita erat ipsum et
-                                lorem et sit, sed stet no labore lorem sit clita
-                                duo justo eirmod magna dolore erat amet
-                            </p>
-                            <p>
-                                <i
-                                    class="fa fa-check text-primary-gradient me-3"
-                                ></i
-                                >Diam dolor diam ipsum et tempor sit
-                            </p>
-                            <p>
-                                <i
-                                    class="fa fa-check text-primary-gradient me-3"
-                                ></i
-                                >Aliqu diam amet diam et eos labore
-                            </p>
-                            <p class="mb-4">
-                                <i
-                                    class="fa fa-check text-primary-gradient me-3"
-                                ></i
-                                >Clita erat ipsum et lorem et sit
-                            </p>
-                            <a
-                                href=""
-                                class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3"
-                                >Read More</a
-                            >
+                        <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+                            <section class="section-bg fd-flex flex-column " data-aos="fade-up" data-aos-delay="100">
+                                <div class=" text-center ">
+                                    <h1 class="poppins sec-text-col display-3 fw-bolder ">DEV-UPS GIRLS</h1>
+                                    <h1 class="poppins sec-text-col display-3 fw-bolder"> </h1>
+                                    <h4 class="raleway ter-text-col ">We are team of talented designers</h4>
+                                </div>
+                                <div class="text-center py-5">
+                                    <a href="" class="btn btn-primary-gradient py-3 px-4 px-sm-5 rounded-pill ">Read More</a>
+                                </div>
+                                <div class="container " >
+                                <div class="row gy-4">
+                                    <div class="col-md-4 col-lg-6 col-12" data-aos="zoom-in"  data-aos-delay="200">
+                                    <div class="card shadow border-0 px-3 py-5 card-zoom">
+                                        <div class="card-body text-center"> 
+                                        <h5 class="card-title my-3 sec-text-col raleway fw-bold">Goal</h5>
+                                        <p class="card-text card-text-col ">We are very dedicated to ensuring we offer 
+                                            the best services there in in the world. Customer satisfaction is our drive to excelence</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-6 col-12" data-aos="zoom-in"  data-aos-delay="300">
+                                    <div class="card shadow border-0 px-3 py-5 card-zoom">
+                                        <div class="card-body text-center">
+                                        <h5 class="card-title my-3 sec-text-col raleway fw-bold">Vision</h5>
+                                        <p class="card-text card-text-col">We not offer our customers quality service, 
+                                            we train devoted and disciplined women who has a lot of grit to support the female gender </p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
-                        <div
-                            class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp"
-                            data-wow-delay="0.3s"
-                        >
+                        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s" >
                             <div class="owl-carousel screenshot-carousel">
-                                <img
-                                    class="img-fluid"
-                                    src="img/screenshot-1.png"
-                                    alt=""
-                                />
-                                <img
-                                    class="img-fluid"
-                                    src="img/screenshot-2.png"
-                                    alt=""
-                                />
-                                <img
-                                    class="img-fluid"
-                                    src="img/screenshot-3.png"
-                                    alt=""
-                                />
-                                <img
-                                    class="img-fluid"
-                                    src="img/screenshot-4.png"
-                                    alt=""
-                                />
-                                <img
-                                    class="img-fluid"
-                                    src="img/screenshot-5.png"
-                                    alt=""
-                                />
+                                <img class="img-fluid" src="./img/pic-6.png" alt=""/>
+                                <img class="img-fluid" src="./img/pic-7.png" alt=""/>
+                                <img class="img-fluid" src="./img/pic-8.png" alt=""/>
+                                <img class="img-fluid" src="./img/pic-9.png" alt=""/>
+                                <img class="img-fluid" src="./img/pic-10.png" alt=""/>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Screenshot End -->
+            <section id="count-section" class="count-bg-color">
+                <div class="container py-4">
+                  <div class="row p-3">
+                    <div class="happy-client col-lg-3 col-md-4 col-sm-6 d-md-flex  justify-content-center">
+                      <div class="text-center">
+                        <span class="purecounter display-4 fw-bolder sec-text-col" data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="2">0</span>
+                        <p class="count-text-col raleway">Happy Clients</p>
+                      </div>
+                    </div> 
+                    <div class="projects col-lg-3 col-md-4  d-md-flex justify-content-center">
+                      <div class="text-center">
+                        <span class="purecounter display-4 fw-bolder sec-text-col" data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="2">0</span>
+                        <p class="count-text-col raleway">Projects</p>
+                      </div>
+                    </div>
+                    <div class="yr-of-exp col-lg-3 col-md-4 col-sm-6 d-md-flex justify-content-center">
+                      <div class="text-center">
+                        <span class="purecounter display-4 fw-bolder sec-text-col" data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="2">0</span>
+                        <p class="count-text-col raleway">Years of Experience</p>
+                      </div>
+                    </div>
+                    <div class="awards col-lg-3 col-md-4 d-md-flex justify-content-center">
+                      <div class="text-center">
+                        <span class="purecounter display-4 fw-bolder sec-text-col" data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="2">0</span>
+                        <p class="count-text-col raleway">Awards</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+            <!-- goals & Visions -->
 
             <!-- Footer Start -->
-            <div
-                class="container-fluid bg-primary text-light footer wow fadeIn"
-                data-wow-delay="0.1s"
-            >
-                <div class="container py-5 px-lg-5">
-                    <div class="row g-5">
-                        <div class="col-md-12 col-lg-12">
-                            <h4 class="text-white mb-4">Address</h4>
-                            <div class="d-flex gap-4">
-                                <p>
-                                    <i class="fa fa-map-marker-alt me-3"></i>
-                                    Lagos, Nigeria
-                                </p>
-                                <p>
-                                    <i class="fa fa-phone-alt me-3"></i>+234
-                                    8169129560
-                                </p>
-                                <p>
-                                    <i class="fa fa-envelope me-3"></i
-                                    >edoziemagdalene@gmail.com
-                                </p>
+            <footer>
+                <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+                    <div id="footer-contain" class="first-layer">
+                        <div id="left-footer" class="inner-layer">
+                            <div class="footer-text">
+                                <h1>Get in touch with us for your service</h1>
                             </div>
-
-                            <div class="d-flex pt-2 gap-3">
-                                <a
-                                    class="btn btn-outline-light btn-social"
-                                    href=""
-                                    ><i class="fab fa-twitter"></i
-                                ></a>
-                                <a
-                                    class="btn btn-outline-light btn-social"
-                                    href=""
-                                    ><i class="fab fa-facebook-f"></i
-                                ></a>
-                                <a
-                                    class="btn btn-outline-light btn-social"
-                                    href=""
-                                    ><i class="fab fa-instagram"></i
-                                ></a>
-                                <a
-                                    class="btn btn-outline-light btn-social"
-                                    href=""
-                                    ><i class="fab fa-linkedin-in"></i
-                                ></a>
+                            <div class="footer-social-icons">
+                                <div><a href=""><img src="./img/facesbook.png" alt=""></a></div>
+                                <div><a href=""><img src="./img/Twitter.png" alt=""></a></div>
+                                <div><a href=""><img src="./img/IG.png" alt=""></a></div>
+                                <div><a href=""><img src="./img/linkedin.png" alt=""></a></div>
+                            </div>
+                        </div>
+                        <div id="right-footer" class="inner-layer">
+                            <div class="right-footer-text">
+                                <p class="footer-small-font">Help line Number</p>
+                                <p>18002652452</p>
+                            </div>
+                            <div class="right-footer-text">
+                                <p class="footer-small-font">Address</p>
+                                <p>NH 234 Public Square San Francisco  65368</p>
+                            </div>
+                            <div class="right-footer-text">
+                                <p class="footer-small-font">We are open</p>
+                                <p>Monday to Friday 9:00 AM to 10:00 AM</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="container px-lg-5">
-                    <div class="copyright">
-                        <div class="row">
-                            <div
-                                class="col-md-6 text-center text-md-start mb-3 mb-md-0"
-                            >
-                                &copy;
-                                <a class="border-bottom" href="#"
-                                    >Hertechtrail cohort 7 project.</a
+                    <div class="container px-lg-5">
+                        <div class="copyright fs-7">
+                            <div class="row">
+                                <div
+                                    class="col-md-6 text-center text-md-start mb-3 mb-md-0"
                                 >
+                                    &copy;
+                                    <a class="border-bottom" href="#"
+                                        >Hertechtrail cohort 7 project.</a
+                                    >
 
-                                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                                Designed By
-                                <a
-                                    class="border-bottom"
-                                    href="https://htmlcodex.com"
-                                    >Maggy.</a
-                                >
-                            </div>
-                            <div class="col-md-6 text-center text-md-end">
-                                <div class="footer-menu">
-                                    <a href="">Home</a>
+                                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                                    Designed By
+                                    <a
+                                        class="border-bottom "
+                                        href="https://htmlcodex.com"
+                                        >Cesca</a
+                                    >
+                                </div>
+                                <div class="col-md-6 text-center text-md-end">
+                                    <div class="footer-menu">
+                                        <a href="">Home</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </footer>    
             <!-- Footer End -->
 
             <!-- Back to Top -->
@@ -333,7 +262,38 @@
         <script src="lib/waypoints/waypoints.min.js"></script>
         <script src="lib/counterup/counterup.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
+        <!-- Initialize Swiper -->
+        <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+            },
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: false,
+            },
+        });
+        </script>
+        <!-- counter -->
+        <script>
+            new PureCounter();
+        </script>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
     </body>
