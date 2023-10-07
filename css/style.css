@@ -1,8 +1,8 @@
 /********** Template CSS **********/
 :root {
-    --primary: #4294e3;
-    --secondary: rgb(66, 6, 6);
-    --light: #f0f6ff;
+    --primary: #a43931;
+    --secondary: #1d4350;
+    --light: #eecda3;
     --dark: #262b47;
 }
 
@@ -100,7 +100,7 @@ h6,
     height: 100%;
     transition: 0.5s;
     z-index: -1;
-    opacity: 0;
+    opacity: .6;
 }
 
 .btn.btn-primary-gradient,
@@ -342,72 +342,34 @@ h6,
     );
 }
 
-/*** Screenshot ***/
-.screenshot-carousel {
-    position: relative;
-    width: 253px;
-    height: 500px;
+/* side profile img */
+.image{
+    width: 100%;
+    height: 100%;
+    display: flex;
     padding: 15px;
     margin-right: 30px;
+    justify-content: center;
+    align-items:center;
+    background-color:var(--primary), var(--secondary), var(--light);
 }
 
-.screenshot-carousel::before {
+.image img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 10px solid var(--primary);
+    position: relative;
+}
+
+.image::before {
     position: absolute;
     content: '';
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background: url(../img/screenshot-frame.png) center center no-repeat;
-    background-size: 253px 500px;
     z-index: 1;
-}
-
-.screenshot-carousel .owl-item img {
-    position: relative;
-    width: 223px;
-    height: 470px;
-}
-
-.screenshot-carousel .owl-dots {
-    position: absolute;
-    top: 50%;
-    right: -30px;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.screenshot-carousel .owl-dot {
-    position: relative;
-    display: inline-block;
-    margin: 5px 0;
-    width: 15px;
-    height: 15px;
-    background: linear-gradient(
-        to bottom right,
-        var(--primary),
-        var(--secondary)
-    );
-    border-radius: 15px;
-    transition: 0.5s;
-}
-
-.screenshot-carousel .owl-dot::after {
-    position: absolute;
-    content: '';
-    width: 5px;
-    height: 5px;
-    top: 5px;
-    left: 5px;
-    background: #ffffff;
-    border-radius: 5px;
-}
-
-.screenshot-carousel .owl-dot.active {
-    box-shadow: 0 0 10px var(--dark);
 }
 
 /*** Testimonial ***/
