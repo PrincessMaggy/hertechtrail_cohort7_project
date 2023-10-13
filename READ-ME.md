@@ -35,7 +35,7 @@ A screenshot of the desktop view of the project is available in the directory.
 
 - Solution URL: (https://github.com/ESTHER-OLA/hertechtrail_cohort7_project/tree/main)
 
-- Live Site URL: (https://blogr-blond.vercel.app/)
+- Live Site URL: (https://main--magenta-moxie-f066eb.netlify.app/#)
 
 
 ## My process
