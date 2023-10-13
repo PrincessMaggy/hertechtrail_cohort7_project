@@ -1,3 +1,63 @@
-nav {
-    background-color: #6d4df2;
+
+/*** Contact me ***/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0
+}
+
+.container{
+    width: 1000px!important;
+}
+
+p{
+    font-size: 12px;
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bg-primary{
+    background-color: #88211c!important;
+}
+
+.form-control{
+    height: 36px;
+    background: #fff;
+    color: rgba(0, 0, 0, 0.08);
+    font-size: 14px;
+    border-radius: 2px;
+    box-shadow: none!important;
+    border: 1px solid rgba(0, 0, 0, 0.01);
+}
+.contactForm .form-control{
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 0;
+}
+
+.form-control:focus, .form-control:active{
+    border-color: #88211c !important;
+}
+
+.btn-primary{
+    background: #88211c !important;
+    border-color: #88211c !important;
+    color: #fff;
+    width: 100px;
+    border-radius: 0 !important;
+}
+
+.btn-primary:hover{
+    background-color: #a43931;
+}
+
+.bi{
+    font-size: 50px;
+}
+
+@media screen and (max-width:600px){
+    width: 100% !important;
+    padding-bottom: 207px;
 }
