@@ -268,6 +268,12 @@
 }
 
 /*** Hero Header home***/
+#home{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 .hero-header {
     margin-bottom: 6rem;
     padding: 16rem 0 0 0;
@@ -283,7 +289,7 @@
     background-repeat: no-repeat;
 }
 
-@media (max-width: 991.98px) {
+@media screen(max-width: 991.98px) {
     .hero-header {
         padding: 6rem 0 9rem 0;
     }
@@ -303,8 +309,6 @@
     width: 100%; 
     height: auto;
      }
-
-
 /*services cards*/
 
 .theme-text{
@@ -345,7 +349,7 @@
 }
 
 /*** Portfolio ***/
-#portfolio{
+ #portfolio{
     box-sizing: border-box;
     background-color: hsl(0, 0%, 100%); 
     overflow: hidden; 
@@ -366,8 +370,6 @@
     content: "";
     position: absolute;
     background: #fff;
-    width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
     opacity: 0;
@@ -431,8 +433,6 @@
     overflow: hidden;
     padding: 0;
     margin: 0;
-    font-size: 1.5rem;
-    font-family: "lora-regular", serif;
     justify-content: center; 
 }
 
@@ -441,6 +441,8 @@
     margin-left: 70px;
     right: 10px;
     position: relative;
+    font-family: "lora-regular", serif;
+    font-size: 1.5rem;
 }
 
 .about-section h4{
@@ -460,7 +462,7 @@
     width: 30%;
 }
 .about-img img{
-    height: 50%;
+    height: 40%;
     border-radius: 50%;
     border: 2px solid var(--primary);
 }
@@ -581,13 +583,6 @@ ul{
 .progress-line.github span::after{
     content: "85%";
 }
-
-@media screen (max-width: 957px) {
- .about-section{
-    padding: 6rem 0 9rem 0;
-    }
-}
-
 /*** Footer ***/
 .footer {
     margin-top: 6rem;
@@ -648,7 +643,6 @@ ul{
 .footer .copyright a {
     color: var(--light);
 }
-
 .footer .footer-menu a {
     margin-right: 15px;
     padding-right: 15px;
@@ -659,4 +653,32 @@ ul{
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+} 
+
+.footer .footer-details{
+    margin-top: 20px;
+    padding-right: 0;
+    border-right: none;
+    font-size: small !important;
+} 
+
+@media (max-width:991.98px){
+    .card-shadow{
+        justify-content: space-evenly;
+    }
+    .about-me{
+        width:120%;
+    }
+    .skills-bar .bar .progress-line{
+        width: 40%;
+    }
+    .box .box-content .title
+    .details
+    a{
+        font-weight:normal;
+        font-size:1%;
+    }
+    .footer{
+        width: 100%;
+    }
 }
