@@ -147,7 +147,6 @@
     );
 }
 
-/*** Navbar ***/
 .navbar-light .navbar-nav .nav-link {
     position: relative;
     margin-right: 25px;
@@ -351,7 +350,6 @@
 /*** Portfolio ***/
  #portfolio{
     box-sizing: border-box;
-    background-color: hsl(0, 0%, 100%); 
     overflow: hidden; 
     padding: 0;
     margin: 0;
@@ -429,7 +427,6 @@
 /*** about-content**/
 #about{
     box-sizing: border-box;
-    background-color: hsl(0, 0%, 100%);
     overflow: hidden;
     padding: 0;
     margin: 0;
@@ -478,6 +475,10 @@
 
 ul{
     list-style-type: none;
+}
+
+.hire-btn{
+    width: 100px;
 }
 
 /* progress start */
@@ -656,7 +657,7 @@ ul{
 } 
 
 .footer .footer-details{
-    margin-top: 20px;
+    margin-top: 30px;
     padding-right: 0;
     border-right: none;
     font-size: small !important;

@@ -16,11 +16,12 @@ p{
 
 h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: var(--light);
+    color: var(--primary);
 }
 
-.bg-primary{
-    background-color: #88211c!important;
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--light);
 }
 
 .form-control{
@@ -42,16 +43,12 @@ h2{
     border-color: #88211c !important;
 }
 
-.btn-primary{
-    background: #88211c !important;
-    border-color: #88211c !important;
-    color: #fff;
-    width: 100px;
-    border-radius: 0 !important;
-}
+.btn{
+   width: 100px;
+} 
 
 .btn-primary:hover{
-    background-color: #a43931;
+    background-color: var(--light);
 }
 
 .bi {
