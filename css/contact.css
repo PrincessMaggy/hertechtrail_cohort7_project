@@ -54,3 +54,10 @@ h3{
 .bi {
     font-size: 30px;
 }
+
+@media (max-width:991.98px){
+    .py-5 {
+        padding-top: 0rem !important;
+        padding-bottom: 0rem !important;
+    }
+}
