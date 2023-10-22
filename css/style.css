@@ -727,6 +727,23 @@ ul{
         padding-top: 0rem !important;
         padding-bottom: 0rem !important;
     }
+
+    .box .box-content{
+        top: 50%;
+    }
+    
+    .box .box-content .title{
+        font-size: 0.2rem;
+        font-weight: 0.2rem;
+    }
+    
+    .box .box-content .details{
+        font-size: 0.2rem;
+    }
+    
+    .box-content a{
+        font-size: 0.2rem;
+       }    
    
     .footer{
         width: 100%;
