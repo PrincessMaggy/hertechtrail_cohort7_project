@@ -733,16 +733,16 @@ ul{
     }
     
     .box .box-content .title{
-        font-size: 0.2rem;
-        font-weight: 0.2rem;
+        font-size: 0.5rem;
+        font-weight: 0.5rem;
     }
     
     .box .box-content .details{
-        font-size: 0.2rem;
+        font-size: 0.7rem;
     }
     
     .box-content a{
-        font-size: 0.2rem;
+        font-size: 0.8rem;
        }    
    
     .footer{
