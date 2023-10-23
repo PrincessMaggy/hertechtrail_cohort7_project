@@ -728,6 +728,11 @@ ul{
         padding-bottom: 0rem !important;
     }
 
+    .box{
+        width: 100%;
+        height: 100%;
+    }
+
     .box .box-content{
         top: 50%;
     }
