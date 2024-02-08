@@ -519,23 +519,39 @@ ul{
 }
 
 .progress-line.html span{
-    width: 95%;
+    width: 100%;
 }
 
 .progress-line.css3 span{
-    width: 90%;
+    width: 100%;
 }
 
 .progress-line.javascript span{
-    width: 75%;
+    width: 98%;
 }
 
 .progress-line.bootstrap5 span{
-    width: 70%;
+    width: 100%;
+}
+
+.progress-line.tailwind span{
+    width: 98%;
 }
 
 .progress-line.github span{
+    width: 100%;
+}
+
+.progress-line.jquerry span{
     width: 85%;
+}
+
+.progress-line.sass span{
+    width: 90%;
+}
+
+.progress-line.react span{
+    width: 80%;
 }
 
 .bar .progress-line span::before{
@@ -563,24 +579,41 @@ ul{
 }
 
 .progress-line.html span::after{
-    content: "95%";
+    content: "100%";
 }
 
 .progress-line.css3 span::after{
-    content: "90%";
+    content: "100%";
 }
 
 .progress-line.javascript span::after{
-    content: "75%";
+    content: "98%";
 }
 
 .progress-line.bootstrap5 span::after{
-    content: "70%";
+    content: "100%";
+}
+
+.progress-line.tailwind span::after{
+    content: "98%";
 }
 
 .progress-line.github span::after{
+    content: "100%";
+}
+
+.progress-line.jquerry span::after{
     content: "85%";
 }
+
+.progress-line.sass span::after{
+    content: "90%";
+}
+
+.progress-line.react span::after{
+    content: "80%";
+}
+
 /*** Footer ***/
 .footer {
     margin-top: 6rem;
