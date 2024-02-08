@@ -2,13 +2,13 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>FitApp - Mobile App HTML Template</title>
+        <title>OLA ESTHER PELUMI | PORTFOLIO</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta content="" name="keywords" />
         <meta content="" name="description" />
 
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon" />
+        <!-- icon -->
+        <link href="./img/techedu_logo.jpg" rel="icon" />
 
         <!-- Google Web Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,7 +38,7 @@
         <!-- Customized Bootstrap Stylesheet -->
         <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-        <!-- Template Stylesheet -->
+        <!-- component Stylesheet -->
         <link href="css/style.css" rel="stylesheet" />
     </head>
 
@@ -50,280 +50,228 @@
                 class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
             >
                 <div
-                    class="spinner-grow text-primary"
+                    class="spinner-grow bg-primary-gradient text-primary"
                     style="width: 3rem; height: 3rem"
                     role="status"
                 >
                     <span class="sr-only">Loading...</span>
                 </div>
             </div>
-            <!-- Spinner End -->
+               <!-- Spinner End -->
 
             <!-- Navbar & Hero Start -->
-            <div class="container-xxl position-relative p-0" id="home">
+            <div class="container-xxl bg-white position-relative p-0" id="home">
                 <nav
-                    class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
+                class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
+            >
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse"
                 >
-                    <a href="" class="navbar-brand p-0">
-                        <h1 class="m-0">FitApp</h1>
-                        <!-- <img src="img/logo.png" alt="Logo"> -->
-                    </a>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse"
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="./index.html" class="nav-item nav-link active"
+                            >Home</a
+                        >
+                        <a href="./about.html" class="nav-item nav-link"
+                            >About</a
+                        >
+
+                        <a href="./portfolio.html" class="nav-item nav-link"
+                            >Portfolio</a
+                        >
+                    </div>
+                    <a
+                        href="./contact.html"
+                        class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3"
+                        >Contact</a
                     >
-                        <span class="fa fa-bars"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <div class="navbar-nav mx-auto py-0">
-                            <a href="#" class="nav-item nav-link active"
-                                >Home</a
-                            >
-                            <a href="./about.html" class="nav-item nav-link"
-                                >About</a
-                            >
-
-                            <a href="./portfolio.html" class="nav-item nav-link"
-                                >Portfolio</a
-                            >
-                        </div>
-                        <a
-                            href="./contact.html"
-                            class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block"
-                            >Contact</a
-                        >
-                    </div>
-                </nav>
-
-                <div class="container-xxl bg-primary hero-header">
-                    <div class="container px-lg-5">
-                        <div class="row g-5">
-                            <div class="col-lg-8 text-center text-lg-start">
-                                <h1
-                                    class="text-white mb-4 animated slideInDown"
-                                >
-                                    Welcome to my page!!!
-                                </h1>
-                                <p class="text-white pb-3 animated slideInDown">
-                                    I'm a software developer.
-                                </p>
-                                <a
-                                    href="about.html"
-                                    class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft"
-                                    >About me</a
-                                >
-                                <a
-                                    href="contact.html"
-                                    class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight"
-                                    >Contact me</a
-                                >
-                            </div>
-                            <div
-                                class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp"
-                                data-wow-delay="0.3s"
-                            >
-                                <div class="owl-carousel screenshot-carousel">
-                                    <img
-                                        class="img-fluid"
-                                        src="img/screenshot-1.png"
-                                        alt=""
-                                    />
-                                    <img
-                                        class="img-fluid"
-                                        src="img/screenshot-2.png"
-                                        alt=""
-                                    />
-                                    <img
-                                        class="img-fluid"
-                                        src="img/screenshot-3.png"
-                                        alt=""
-                                    />
-                                    <img
-                                        class="img-fluid"
-                                        src="img/screenshot-4.png"
-                                        alt=""
-                                    />
-                                    <img
-                                        class="img-fluid"
-                                        src="img/screenshot-5.png"
-                                        alt=""
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </div>
-            <!-- Navbar & Hero End -->
-
-            <!-- Screenshot Start -->
-            <div class="container-xxl py-5">
-                <div class="container py-5 px-lg-5">
-                    <div class="row g-5 align-items-center">
-                        <div
-                            class="col-lg-8 wow fadeInUp"
-                            data-wow-delay="0.1s"
-                        >
-                            <h5 class="text-primary-gradient fw-medium">
-                                Screenshot
-                            </h5>
-                            <h1 class="mb-4">
-                                User Friendly interface And Very Easy To Use
-                                Fitness App
+            </nav>
+        </div>
+            <div class="container-xxl bg-primary hero-header">
+                <div class="container px-lg-5">
+                    <div class="row g-5">
+                        <div class="col-lg-8 text-center text-lg-start">
+                            <h1
+                                class="text-white mb-4 animated slideInDown"
+                            >
+                               Hi! I'm ESTHER PELUMI OLA
                             </h1>
-                            <p class="mb-4">
-                                Diam dolor diam ipsum et tempor sit. Aliqu diam
-                                amet diam et eos labore. Clita erat ipsum et
-                                lorem et sit, sed stet no labore lorem sit clita
-                                duo justo eirmod magna dolore erat amet
-                            </p>
-                            <p>
-                                <i
-                                    class="fa fa-check text-primary-gradient me-3"
-                                ></i
-                                >Diam dolor diam ipsum et tempor sit
-                            </p>
-                            <p>
-                                <i
-                                    class="fa fa-check text-primary-gradient me-3"
-                                ></i
-                                >Aliqu diam amet diam et eos labore
-                            </p>
-                            <p class="mb-4">
-                                <i
-                                    class="fa fa-check text-primary-gradient me-3"
-                                ></i
-                                >Clita erat ipsum et lorem et sit
+                            <h6 class="text-white pb-3 animated slideInDown">
+                                FRONTEND DEVELOPER
+                            </h6>
+                            <p class="animated slideInDown" style="color:var(--light);">
+                                I am passionate about creating <br>
+                                interactive applications and <br>
+                                experience on the web.
                             </p>
                             <a
-                                href=""
-                                class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3"
-                                >Read More</a
+                                href="about.html"
+                                class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft align-items-center"
+                                >About me</a
                             >
                         </div>
-                        <div
+
+                         <div
                             class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp"
                             data-wow-delay="0.3s"
-                        >
-                            <div class="owl-carousel screenshot-carousel">
-                                <img
-                                    class="img-fluid"
-                                    src="img/screenshot-1.png"
-                                    alt=""
-                                />
-                                <img
-                                    class="img-fluid"
-                                    src="img/screenshot-2.png"
-                                    alt=""
-                                />
-                                <img
-                                    class="img-fluid"
-                                    src="img/screenshot-3.png"
-                                    alt=""
-                                />
-                                <img
-                                    class="img-fluid"
-                                    src="img/screenshot-4.png"
-                                    alt=""
-                                />
-                                <img
-                                    class="img-fluid"
-                                    src="img/screenshot-5.png"
-                                    alt=""
-                                />
-                            </div>
+                        > 
+                        <div class="img-home">
+                            <img src="./img/esther_img-removebg-preview.png" alt="image" class="image-fluid"> 
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Screenshot End -->
-
-            <!-- Footer Start -->
-            <div
-                class="container-fluid bg-primary text-light footer wow fadeIn"
-                data-wow-delay="0.1s"
-            >
-                <div class="container py-5 px-lg-5">
-                    <div class="row g-5">
-                        <div class="col-md-12 col-lg-12">
-                            <h4 class="text-white mb-4">Address</h4>
-                            <div class="d-flex gap-4">
-                                <p>
-                                    <i class="fa fa-map-marker-alt me-3"></i>
-                                    Lagos, Nigeria
-                                </p>
-                                <p>
-                                    <i class="fa fa-phone-alt me-3"></i>+234
-                                    8169129560
-                                </p>
-                                <p>
-                                    <i class="fa fa-envelope me-3"></i
-                                    >edoziemagdalene@gmail.com
-                                </p>
-                            </div>
-
-                            <div class="d-flex pt-2 gap-3">
-                                <a
-                                    class="btn btn-outline-light btn-social"
-                                    href=""
-                                    ><i class="fab fa-twitter"></i
-                                ></a>
-                                <a
-                                    class="btn btn-outline-light btn-social"
-                                    href=""
-                                    ><i class="fab fa-facebook-f"></i
-                                ></a>
-                                <a
-                                    class="btn btn-outline-light btn-social"
-                                    href=""
-                                    ><i class="fab fa-instagram"></i
-                                ></a>
-                                <a
-                                    class="btn btn-outline-light btn-social"
-                                    href=""
-                                    ><i class="fab fa-linkedin-in"></i
-                                ></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container px-lg-5">
-                    <div class="copyright">
-                        <div class="row">
-                            <div
-                                class="col-md-6 text-center text-md-start mb-3 mb-md-0"
-                            >
-                                &copy;
-                                <a class="border-bottom" href="#"
-                                    >Hertechtrail cohort 7 project.</a
-                                >
-
-                                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                                Designed By
-                                <a
-                                    class="border-bottom"
-                                    href="https://htmlcodex.com"
-                                    >Maggy.</a
-                                >
-                            </div>
-                            <div class="col-md-6 text-center text-md-end">
-                                <div class="footer-menu">
-                                    <a href="">Home</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Footer End -->
-
-            <!-- Back to Top -->
-            <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"
-                ><i class="bi bi-arrow-up text-white"></i
-            ></a>
         </div>
+         <!-- Navbar & Hero End -->
+
+         <div class="container-fluid">
+            <h6 class="text-center mt-5 display-6 fw-normal"><span class="theme-text">Services</span></h6>
+            <h4 class="text-center mt-auto display-4 fw-normal">What can I do for you?</h4>
+            <hr class="mx-auto mb-5 w-25">
+            <div class="row mb-25">
+                <div class="col-12 col-sm-6 col-md-3 m-auto">
+
+                    <!-- card starts here-->
+                    <div class="card shadow">
+                        <img src="./img/web-dev.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="text-center">Web Development</h3>
+                            <hr class="mx-auto w-75">
+                            <p>I create user-friendly and efficient 
+                                websites that are visually appealing and easy to navigate. I utilize my skills in HTML,
+                                 CSS, JavaScript,and PHP to develop websites that meet all the requirements 
+                                 of the client.</p>
+                        </div>
+                    </div>
+                    <!-- card ends here-->
+                </div>
+                <!--col ends here-->
+
+                <div class="col-12 col-sm-6 col-md-3 m-auto">
+                    <!-- card starts here-->
+                    <div class="card shadow">
+                        <img src="./img/web-design.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="text-center">Web Design</h3>
+                            <hr class="mx-auto w-75">
+                            <p>I design to make a positive impact on clients, co-workers, 
+                                and the Internet using my skills and experience to design compelling and 
+                                attractive websites. Solving code problems.Editing & Design with designing team in the 
+                                company to build perfect web designs.</p>
+                        </div>
+                    </div>
+                    <!-- card ends here-->
+                </div>
+                <!--col ends here-->
+
+                 <div class="col-12 col-sm-6 col-md-3 m-auto">
+                    <!-- card starts here-->
+                    <div class="card shadow">
+                        <img src="./img/web-app.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="text-center">Web Application</h3>
+                            <hr class="mx-auto w-75">
+                            <p>I create user-friendly and efficient 
+                                websites that are visually appealing and easy to navigate. I utilize my skills in HTML,
+                                 CSS, JavaScript,and PHP to develop websites that meet all the requirements 
+                                 of the client.</p>
+                        </div>
+                    </div>
+                    <!-- card ends here-->
+                </div>
+                <!--col ends here-->
+
+                <div class="col-12 col-sm-6 col-md-3 m-auto">
+                    <!-- card starts here-->
+                    <div class="card shadow">
+                        <img src="./img/mobile-dev.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="text-center">Mobile Development</h3>
+                            <hr class="mx-auto w-75">
+                            <p> satisfying the client’s needs by developing and
+                                 maintaining high-quality software for mobile devices.</p>
+                        </div>
+                    </div>
+                    <!-- card ends here-->
+                </div>
+                <!--col ends here-->
+            </div>
+        </div>
+
+        <!-- Footer Start -->
+        <div
+            class="container-fluid bg-primary text-light footer wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+        <div class="container text-center text-md-left footer-details">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold" style="color:var(--light);">Get in touch</h5>
+                 <div>
+                    <p>
+                        <a class="btn btn-outline-light" href="https://twitter.com/P_tomiwa_?t=HE5B98KKAv0af67LEabh6Q&s=09">
+                            <i class="fab fa-twitter" style="color:var(--light);"></i> Twitter</a>
+                       </p>
+                       <p>
+                        <a class="btn btn-outline-light" href="https://www.facebook.com/pelumi.motunrayo?mibextid=ZbWKwL">
+                            <i class="fab fa-facebook-f" style="color:var(--light);"></i> Facebook</a>
+                       </p>
+                 </div>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold" style="color:var(--light);">Get in touch</h5>
+                    <p>
+                        <a class="btn btn-outline-light" href="https://instagram.com/maray_apparels?igshid=YTQwZjQNml0OA==">
+                            <i class="fab fa-instagram" style="color:var(--light);"></i> Instagram</a>
+                       </p>
+                       <p>
+                        <a class="btn btn-outline-light" href="https://www.linkedin.com/in/ola-esther-96255918b">
+                            <i class="fab fa-linkedin-in" style="color:var(--light);"></i> LinkedIn</a>
+                       </p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold" style="color:var(--light);">Find me here</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Lagos | Nigeria </p>
+                    <p><i class="fa fa-phone-alt me-3"></i>(+234) 810 751 3004</p>
+                    <p><i class="fa fa-envelope me-3"></i>estholowo2018@gmail.com</p>
+                </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div
+                    class="col-md-7 col-lg-8 text-center text-md-start mb-3 mb-md-0"
+                >
+                    &copy;
+                    <a class="border-bottom" href="#"
+                        >Hertechtrail cohort 7 capstone project.</a
+                    >
+                    Designed By
+                    <a
+                        class="border-bottom"
+                        href="https://htmlcodex.com"
+                        >Esther</a
+                    >
+                </div>
+        </div>
+    </div>
+    </div>
+    </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"
+            ><i class="bi bi-arrow-up text-white"></i
+        ></a>
+            </div>
 
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -334,7 +282,7 @@
         <script src="lib/counterup/counterup.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-        <!-- Template Javascript -->
+        <!-- Javascript link -->
         <script src="js/main.js"></script>
     </body>
 </html>

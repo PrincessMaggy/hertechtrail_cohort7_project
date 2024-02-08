@@ -1,3 +1,63 @@
-nav {
-    background-color: #6d4df2;
+
+/*** Contact me ***/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0
+}
+
+.container{
+    width: 100% !important;
+}
+
+p{
+    font-size: 12px;
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--primary);
+}
+
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--light);
+}
+
+.form-control{
+    height: 36px;
+    background: #fff;
+    color: rgba(0, 0, 0, 0.08);
+    font-size: 14px;
+    border-radius: 2px;
+    box-shadow: none!important;
+    border: 1px solid rgba(0, 0, 0, 0.01);
+}
+.contactForm .form-control{
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 0;
+}
+
+.form-control:focus, .form-control:active{
+    border-color: #88211c !important;
+}
+
+.btn{
+   width: 100px;
+} 
+
+.btn-primary:hover{
+    background-color: var(--light);
+}
+
+.bi {
+    font-size: 30px;
+}
+
+@media (max-width:991.98px){
+    .py-5 {
+        padding-top: 0rem !important;
+        padding-bottom: 0rem !important;
+    }
 }
